@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - Brew Haven</title>
+    <style>
+        /* Full-page background */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url(images/home_background.avif) no-repeat center center/cover;
+            background-size: cover;
+            color: white;
+        }
+
+        /* Overlay */
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            min-height: 100vh;
+            padding: 20px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Navbar with visible background */
+.navbar {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark background */
+    padding: 10px 0;                     /* vertical padding */
+    border-radius: 8px;                  /* optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* subtle shadow for depth */
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #c59d5f; /* highlight on hover */
+}
+
+
+        /* Page header */
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        p.subtitle {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 700px;
+        }
+
+        /* Contact info */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .contact-info div {
+            margin: 8px 0;
+        }
+
+        .contact-info span {
+            font-weight: bold;
+            color: #c59d5f;
+            margin-right: 8px;
+        }
+
+        /* Contact form */
+        form {
+            background: #fff8f0;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            color: #4b2e1e;
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px 0;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #c59d5f;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background-color: #a67c3d;
+        }
+
+        /* Responsive */
+        @media(max-width: 600px) {
+            h1 { font-size: 36px; }
+            p.subtitle { font-size: 18px; }
+            .contact-info { font-size: 16px; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="offers.html">Special Offers</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Page Header -->
+        <h1>Contact Us</h1>
+        <p class="subtitle">We would love to hear from you! Send us your feedback, questions, or any coffee suggestions. Our team is always ready to help and make your Brew Haven experience amazing.</p>
+
+        <!-- Contact Details -->
+        <div class="contact-info">
+            <div><span>📞 Phone:</span> +1 (555) 123-4567</div>
+            <div><span>✉️ Email:</span> contact@brewhaven.com</div>
+            <div><span>🏠 Address:</span> 123 Coffee Street, Bean Town, USA</div>
+        </div>
+
+        <!-- Contact Form -->
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</body>
+</html>
