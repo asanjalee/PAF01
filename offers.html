@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Special Offers - Brew Haven</title>
+    <style>
+        /* Full-page background */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') no-repeat center center/cover;
+            background-size: cover;
+            color: white;
+        }
+
+        /* Overlay */
+        .overlay {
+            background: rgba(0,0,0,0.7);
+            min-height: 100vh;
+            padding: 20px 50px;
+        }
+
+        /* Navbar */
+        .navbar {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            color: #c59d5f;
+        }
+
+        /* Page Title */
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        p.subtitle {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+        /* Offers Grid */
+        /* Offers Grid */
+.offers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* increased min-width */
+    gap: 40px; /* more space between cards */
+}
+
+/* Individual offer card */
+.offer-card {
+    background: #fff8f0;
+    color: #4b2e1e;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35); /* slightly stronger shadow */
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+/* Hover effect */
+.offer-card:hover {
+    transform: scale(1.07); /* slightly bigger zoom on hover */
+}
+
+/* Card image */
+.offer-card img {
+    width: 100%;
+    height: 250px; /* increased from 180px */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+
+/* Hover image zoom */
+.offer-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Card content */
+.offer-content {
+    padding: 20px; /* slightly more padding */
+}
+
+        .offer-content h3 {
+            margin: 10px 0 5px 0;
+            font-size: 20px;
+        }
+
+        .offer-content p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .offer-content .price {
+            font-weight: bold;
+            color: #c59d5f;
+            margin-top: 5px;
+        }
+
+        .offer-content button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #c59d5f;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .offer-content button:hover {
+            background-color: #a67c3d;
+        }
+
+        /* Spacer */
+        .spacer {
+            height: 50px;
+        }
+
+        /* Responsive text */
+        @media(max-width: 500px) {
+            h1 { font-size: 36px; }
+            p.subtitle { font-size: 16px; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="offers.html">Special Offers</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Page Title -->
+        <h1>Special Offers</h1>
+        <p class="subtitle">Grab these limited-time deals and enjoy our best coffee at amazing prices!</p>
+
+        <!-- Offers Cards -->
+        <div class="offers-container">
+
+            <div class="offer-card">
+                <img src="images/Espresso_offer.jpg" alt="Espresso Offer">
+                <div class="offer-content">
+                    <h3>Espresso Combo</h3>
+                    <p>Get 2 Espressos for the price of 1!</p>
+                    <p class="price">$5</p>
+                    <button onclick="location.href='menu.html'">Order Now</button>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <img src="https://images.unsplash.com/photo-1560842920-21fdb5ed0436" alt="Cappuccino Offer">
+                <div class="offer-content">
+                    <h3>Cappuccino Delight</h3>
+                    <p>Buy 1 Cappuccino, get 1 small cookie free.</p>
+                    <p class="price">$4</p>
+                    <button onclick="location.href='menu.html'">Order Now</button>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Latte Offer">
+                <div class="offer-content">
+                    <h3>Latte Lovers</h3>
+                    <p>Buy any Latte and get 50% off on your second Latte.</p>
+                    <p class="price">$4.5</p>
+                    <button onclick="location.href='menu.html'">Order Now</button>
+                </div>
+            </div>
+
+            <div class="offer-card">
+                <img src="https://images.unsplash.com/photo-1584999732246-8a1c8d8e9b01" alt="Mocha Offer">
+                <div class="offer-content">
+                    <h3>Mocha Magic</h3>
+                    <p>Try our Mocha this week and get a free mini dessert!</p>
+                    <p class="price">$5</p>
+                    <button onclick="location.href='menu.html'">Order Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="spacer"></div>
+    </div>
+
+</body>
+</html>
